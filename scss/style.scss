@@ -51,6 +51,7 @@ $font: Georgia, Times, 'Times New Roman', serif;
     padding: 3vh;
     font-family: $font;
     .texttitt{
+        background-color: $bgcolor;
         text-align: $center;
         color: $color;
     }
