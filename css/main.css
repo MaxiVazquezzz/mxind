@@ -17,9 +17,9 @@
   font-family: Georgia, Times, "Times New Roman", serif; }
   .main .tittle1 {
     font-family: Georgia, Times, "Times New Roman", serif;
-    padding: 9vh;
     text-align: center;
-    color: red; }
+    color: #f7f5b2;
+    background-color: gray; }
 
 .section {
   padding: 5vh;
@@ -27,11 +27,11 @@
   .section .textocarrusel {
     background-color: gray;
     text-align: center;
-    color: aliceblue; }
+    color: #f7f5b2; }
   .section .tittle3 {
-    padding: 4vh;
+    background-color: gray;
     text-align: center;
-    color: red; }
+    color: #f7f5b2; }
 
 .foot {
   background-color: wheat; }
@@ -43,28 +43,46 @@
   font-family: Georgia, Times, "Times New Roman", serif; }
   .main2 .texttitt {
     text-align: center;
-    color: red; }
-  .main2 .textcarr {
-    background-color: bisque;
-    text-align: center;
-    font-size: 5vh; }
+    color: #f7f5b2; }
 
 .main3 {
   padding: 3vh;
   font-family: Georgia, Times, "Times New Roman", serif; }
   .main3 .text {
+    background-color: gray;
     text-align: center;
-    color: red; }
+    color: #f7f5b2; }
   .main3 .galeria {
     background-color: #87dbf0;
     text-align: center;
     color: black; }
 
-.main4 {
+.main4 .tittle4 {
+  background-color: gray;
   font-family: Georgia, Times, "Times New Roman", serif;
   text-align: center;
-  color: red; }
+  color: #f7f5b2; }
 
 .plus {
   align-items: center;
   font-family: Georgia, Times, "Times New Roman", serif; }
+
+@media (max-width: 600px) {
+  .foot {
+    text-align: center; }
+  .plus {
+    text-align: center; }
+  .img {
+    text-align: center; }
+  .main4 {
+    text-align: center; } }
+
+@media screen and (max-width: 1200px) and (min-width: 600px) {
+  .foot {
+    text-align: center; }
+  .plus {
+    text-align: center; }
+  .img {
+    text-align: center; }
+  .section.textocarrusel {
+    text-align: center; } }

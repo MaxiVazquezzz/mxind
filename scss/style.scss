@@ -1,4 +1,5 @@
-$color : red;
+$color : #f7f5b2;
+$bgcolor: gray;
 $center: center;
 $font: Georgia, Times, 'Times New Roman', serif;
 *{
@@ -21,29 +22,29 @@ $font: Georgia, Times, 'Times New Roman', serif;
     font-family: $font;
     .tittle1{
         font-family:  $font;
-        padding: 9vh;
         text-align: $center;
-        color: $color;
+        color:$color;
+        background-color: $bgcolor;
     }
 }
 .section{
     padding: 5vh;
     font-family: $font;
     .textocarrusel{
-        background-color: gray;
-        text-align: $center;
-        color: aliceblue;
-    }
-    .tittle3{
-        padding: 4vh;
+        background-color: $bgcolor;
         text-align: $center;
         color: $color;
+    }
+    .tittle3{
+        background-color: $bgcolor;
+        text-align: $center;
+        color:$color;
     }
 }
 .foot{
     background-color: wheat;
     .fontfoot{
-        color: gray;
+        color: $bgcolor;
     }
 }
 .main2{
@@ -53,16 +54,13 @@ $font: Georgia, Times, 'Times New Roman', serif;
         text-align: $center;
         color: $color;
     }
-    .textcarr{
-        background-color:bisque;
-        text-align: $center;
-        font-size: 5vh;
-    }
+  
 }
 .main3{
     padding: 3vh;
     font-family: $font;
     .text{
+        background-color: $bgcolor;
         text-align: $center;
         color: $color;
     }
@@ -72,12 +70,54 @@ $font: Georgia, Times, 'Times New Roman', serif;
         color: rgb(0, 0, 0);
     }
 }
-.main4{
-    font-family: $font;
-    text-align: $center;
-    color: $color;
+.main4
+{
+    
+    .tittle4
+    {
+     background-color: $bgcolor;
+     font-family: $font;
+     text-align: $center;
+     color: $color;
+    }
+    
 }
 .plus{
     align-items: $center;
     font-family: $font;
+}
+@media (max-width: 600px)
+{
+  
+    .foot{
+        text-align: $center;
+    }
+    .plus{
+        text-align: $center;
+    }
+    .img
+    {
+        text-align: $center;
+    }
+    .main4{
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 1200px) and (min-width: 600px)
+{
+    
+    .foot{
+        text-align: $center;
+    }
+    .plus{
+        text-align: $center;
+    }
+    .img 
+    { 
+        text-align: $center;
+    }
+    .section.textocarrusel{
+        text-align: center;
+    }
 }
