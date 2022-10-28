@@ -56,7 +56,62 @@
   .main3 .galeria {
     background-color: #87dbf0;
     text-align: center;
-    color: black; }
+    color: black;
+    overflow: hidden; }
+  .main3 .galeria > a {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 6px #000001; }
+  .main3 .galeria img {
+    vertical-align: top;
+    height: 500px;
+    object-fit: cover;
+    transition: transform 0.5s; }
+  .main3 .galeria a:hover img {
+    filter: blur(2px);
+    transform: rotate(10deg) scale(1.3); }
+  .main3 .ligth-box {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    transition: transform .3s ease-in-out;
+    width: 100%;
+    height: 100vh;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0); }
+  .main3 .ligth-box img {
+    width: 45vw;
+    max-height: 85vh; }
+  .main3 .ligth-box:target {
+    transform: scale(1); }
+  .main3 .close {
+    display: block;
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    background-color: gray;
+    color: #f6d365;
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%; }
+  .main3 .next {
+    display: block;
+    background-color: gray;
+    color: #f6d365;
+    height: 30px;
+    width: 30px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%; }
 
 .main4 .tittle4 {
   background-color: gray;
